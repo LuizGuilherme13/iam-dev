@@ -16,6 +16,20 @@ class App extends StatelessWidget {
           title: const Text('Hello World!'),
           centerTitle: true,
         ),
+        body: const Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image(
+              image:
+                  AssetImage('assets/images/pixeltrue-web-development-1.png'),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Text('Hi everyone, I\'m a developer and this is just a test app.')
+          ],
+        ),
       ),
     );
   }
